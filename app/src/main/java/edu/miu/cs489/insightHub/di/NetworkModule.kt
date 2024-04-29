@@ -54,7 +54,7 @@ object NetworkModule {
     @Singleton
     fun provideRetrofitInstance(gsonConverterFactory: GsonConverterFactory, client: OkHttpClient): Retrofit{
         return Retrofit.Builder()
-            .baseUrl("http://192.168.4.98:8080/insightHubWeb/api/v1/")
+            .baseUrl("http://10.200.18.124:8080/insightHubWeb/api/v1/")
             .addConverterFactory(gsonConverterFactory)
             .client(client)
             .build()
